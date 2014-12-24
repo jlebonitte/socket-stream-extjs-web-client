@@ -1,1 +1,1 @@
-# Welcome to your new realtime app
+This is a test project exporing the integration of socketstream with various front-end libraries
