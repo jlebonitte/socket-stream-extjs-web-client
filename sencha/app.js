@@ -1,7 +1,12 @@
 Ext.application({
     name: 'WebClient',
 
-    extend: 'WebClient.Application',
-    
-    autoCreateViewport: true
+    views: [
+        'Viewport'
+    ],
+
+    launch: function(app){
+        Ext.create('WebClient.view.Viewport');
+    }
+
 });

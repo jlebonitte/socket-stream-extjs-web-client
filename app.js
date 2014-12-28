@@ -1,5 +1,6 @@
 var http = require('http'),
-    ss = require('socketstream');
+    ss = require('socketstream'),
+    db = require('node-common/lib/Mongo');
 
 ss.client.define('main', {
     view: 'app.html',
@@ -20,7 +21,11 @@ if(ss.env === 'production'){
 
 // Start web server
 var server = http.Server(ss.http.middleware);
-server.listen(3000);
+server.listen(8080);
 
 // Start SocketStream
 ss.start(server);
+
+// Define global variables
+global.db=db;
+global.ss=ss;

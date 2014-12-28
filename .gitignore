@@ -1,2 +1,5 @@
 node_modules
 .idea
+.build
+client/code/app/app.js
+client/code/app/app.min.js
