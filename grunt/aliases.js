@@ -1,5 +1,5 @@
 module.exports = {
-    'default': [
+    'dev': [
         'clean:all',
         'sencha_dependencies:all',
         'uglify:dev',
@@ -10,5 +10,8 @@ module.exports = {
         'sencha_dependencies:all',
         'uglify:prod',
         'copy:all'
+    ],
+    'watch': [
+        'watch'
     ]
 };
