@@ -11,9 +11,8 @@ module.exports = {
         'uglify:prod',
         'copy:all'
     ],
-    'watch': [
-        'forever:dev:stop',
-        'forever:dev:start',
+    'startWatch': [
+        'forever:dev:restart',
         'watch'
     ]
 };
