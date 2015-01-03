@@ -1,7 +1,7 @@
 module.exports = {
     scripts: {
         files: './sencha/**/*.js',
-        tasks: ['default'],
+        tasks: ['dev', 'forever:dev:restart'],
 
         options: {
             debounceDelay: 250

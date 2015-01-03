@@ -1,6 +1,7 @@
+require('node-common');
+
 var http = require('http'),
-    ss = require('socketstream'),
-    db = require('node-common/lib/Mongo');
+    ss = require('socketstream');
 
 ss.client.define('main', {
     view: 'app.html',
@@ -27,5 +28,4 @@ server.listen(8080);
 ss.start(server);
 
 // Define global variables
-global.db=db;
 global.ss=ss;

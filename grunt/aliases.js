@@ -12,6 +12,8 @@ module.exports = {
         'copy:all'
     ],
     'watch': [
+        'forever:dev:stop',
+        'forever:dev:start',
         'watch'
     ]
 };

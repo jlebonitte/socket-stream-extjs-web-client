@@ -3,3 +3,4 @@ node_modules
 .build
 client/code/app/app.js
 client/code/app/app.min.js
+logs
